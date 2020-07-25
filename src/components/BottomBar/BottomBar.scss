@@ -1,0 +1,78 @@
+@import "../../assets/styles/global-sytles.scss";
+
+.bottomcontainer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:60px;
+   width:100%;
+   background-color:$themecolor;
+   border-color: $themecolor;
+	.bottom-content-container{
+	text-align: center;
+}
+.btn{
+	color: rgba(255, 255, 255, 0.7) !important;
+	transition: all 0.3s;
+	min-width: 56px;
+	max-width: 80px;
+	background: transparent !important;
+	border-radius: 0;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	font-weight: 400;
+	height: 100%;
+	margin: 0;
+	min-width: 90px;
+	padding: 8px 12px 10px;
+	text-transform: none;
+	-ms-flex-negative: 1;
+	flex-shrink: 1;
+	align-items: center;
+ :hover {
+	color: white;
+}
+
+.btn-content{
+	font-size: 14px;
+	white-space: nowrap;
+	will-change: font-size;
+	align-items: center;
+	border-radius: inherit;
+	color: inherit;
+//	display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+	transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+	white-space: nowrap;
+	width: inherit;
+	span{
+	line-height: 1;
+	}
+
+}
+}
+.active {
+	color: $primary-color !important;
+	padding-top: 6px;
+	transition: all 0.3s;
+}
+}
+
+
+@media (min-width: $breakpoint-tablet) {
+	btn {
+		max-width: 85px !important;
+
+	}
+
+}
+
+@media (min-width: $breakpoint-mobile) {
+.bottomcontainer {
+	.btn {
+		max-width: 85px !important;
+	}
+}
+}

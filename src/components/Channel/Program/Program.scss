@@ -1,0 +1,18 @@
+.program {
+    background-color: green;
+    outline: 1px solid white;
+    position: absolute;
+    height: 50px;
+
+    h3 {
+        font-size: 12px;
+        color: white;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .time {
+        font-size: 12px;
+        color: #aaa;
+    }
+}

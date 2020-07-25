@@ -1,0 +1,30 @@
+$themecolor: black;
+$primary-color :orange;
+$white :white;
+$fontsize14: 14px;
+$color-background: #000000;
+$color-secondary: #252525;
+$color-element: #181818;
+$color-element-active: #5a5a5a;
+$color-border: #464646;
+$color-font: #ffffff;
+$color-button-off: #555555;
+
+
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;
+
+.dark-theme{
+   background-color:$themecolor;
+   border-color:$themecolor;
+}
+
+
+
+@media (min-width: $breakpoint-tablet) {
+
+}
+
+@media (min-width: $breakpoint-mobile) {
+
+}

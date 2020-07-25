@@ -1,0 +1,31 @@
+			 .time-labels {
+			 	display: flex;
+			 	flex-wrap: nowrap;
+			 	position: sticky;
+
+			 	.time-label {
+					 min-width: 240px;
+					 height: 50px;
+					 border-right: solid 1px #464646;
+					 border-top: solid 1px #464646;
+					 border-bottom: solid 1px #464646;
+			 		//min-width: 150px;
+					 position: relative;
+					 padding: 14px 34px;
+					 opacity: 0.6;
+				 }
+				 .activeTime{
+					 opacity: 1.0;
+					 font-size: 120%;
+				 }
+
+			 	.time-label:after {
+			 		content: "";
+			 		position: absolute;
+			 		top: 0;
+			 		right: 0;
+			 		bottom: 0;
+			 		width: 1px;
+			 		background: white;
+			 	}
+			 }

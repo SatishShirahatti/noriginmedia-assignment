@@ -1,0 +1,14 @@
+.spinner-grow {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    background-color: currentColor;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-animation: spinner-grow .75s linear infinite;
+	animation: spinner-grow .75s linear infinite;
+	margin: 10px;
+}
+
+
