@@ -6,12 +6,16 @@
         position: absolute;
         background: gray;
         left: 0;
-        width: 50px;
-        height: 50px;
-        padding: 12px;
+        width: 75px;
+        height: 75px;
+        padding: 20px 0px;
         text-align: center;
         border-bottom: 1px solid white;
-        border-right: 1px solid white;
-        z-index: 1;
+		z-index: 1;
+		span{
+			font-size: 28px;
+			text-transform: uppercase;
+			background: chocolate;
+		}
     }
 }

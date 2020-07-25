@@ -1,11 +1,12 @@
 .program {
-    background-color: green;
+    background-color: #464646;
     outline: 1px solid white;
-    position: absolute;
-    height: 50px;
+	position: absolute;
+	padding: 15px 0px;
+    height: 75px;
 
     h3 {
-        font-size: 12px;
+        font-size: 14px;
         color: white;
         white-space: nowrap;
         overflow: hidden;
