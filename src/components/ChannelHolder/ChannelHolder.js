@@ -14,17 +14,14 @@ function ChannelHolder() {
     const loadChannelData = async () => {
         const response = await fetch(API_URL);
         const data = await response.json();
-        console.log('data', data);
         setChannels(data);
     };
 
     //	const Channels = ["AXN", "VOX", "HBO", "ZOO"];
-    console.log('channels', channels);
     return (
         <div className="channel-holder">
             {channels.map((channel) => {
 				const { id, title, images, schedules } = channel;
-				console.log('channel, channel', channel);
                 return (
 					<div key={id} className="channel">
                         <div className="channel-logo" value={title}>

@@ -3,10 +3,13 @@ import Program from './Program/Program';
 import './Channel.scss';
 
 function Channel({schedules}) {
+	
+	schedules.sort((a, b) => b.start - a.start);
+	console.log("schedules", schedules)
     return (
         <div className="channel-program">
             {
-                schedules.map(schedule => <Program data={schedule} />)
+				schedules.map((schedule,index) => <Program data={schedule} key={index} />)
             }
         </div>
     );

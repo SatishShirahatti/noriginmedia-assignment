@@ -33,7 +33,7 @@ export default ({ data }) => {
 
     const position = containerWidth - ((HOUR_SIZE / 60) * startMinutes);
     // console.log('pos', position, containerWidth, (HOUR_SIZE / 60) * startMinutes);
-    console.log('->', { width: elWidth, left: position });
+   // console.log('->', { width: elWidth, left: position });
     return (
         <div className="program" style={{ width: elWidth, left: position }}>
             <h3 title={data.title}>{data.title}</h3>
