@@ -1,9 +1,8 @@
-	import React, { Component } from 'react';
+import React, { Component} from 'react';
 	import moment from "moment";
 	//import LiveComponent from "../Live/LivePage";
 	import TimelineContainer from "../../components/Timeline/Timeline"
    import "./ListPage.scss"
-
 
 	class ListPage extends Component {
 
@@ -27,7 +26,7 @@
 		}
 		handleCurrentTime =() =>{
 			const anchor = document.querySelector('.activeTime');
-			anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+			anchor.scrollIntoView({ behavior: 'smooth', block: 'center', inline:"center"})
 		}
 		toggleStartColor =(event) =>{
 			var newColor = this.state.color === '' ? '#E8A61D' : '';

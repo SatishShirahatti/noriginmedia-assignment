@@ -3,8 +3,7 @@ import Program from './Program/Program';
 import './Channel.scss';
 
 function Channel({schedules}) {
-	
-	schedules.sort((a, b) => b.start - a.start);
+
     return (
         <div className="channel-program">
             {

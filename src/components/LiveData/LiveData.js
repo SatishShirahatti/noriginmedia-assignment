@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image, Row, Col } from "react-bootstrap";
+import LazyLoad from 'react-lazyload';
 import "./LiveData.scss";
 //import LIVE_PROGRAM_DATA from "../../common/API/programdata/program_live";
 import { Component } from 'react';
@@ -23,7 +24,9 @@ class LiveData extends Component {
 			<div className="contianer">
 				<div className="live-contianer">
 					<div className="header-image-continaner">
+						<LazyLoad height={200} once >
 						<Image src={LIVE_PROGRAM_DATA.images.icon} fluid />
+						</LazyLoad>
 						<span className="live-text">
 							<span className="dot"></span>
 						LIVE
@@ -33,7 +36,9 @@ class LiveData extends Component {
 						<Row>
 							<Col xs={2}>
 								<div className="channel-title">
+									<LazyLoad height={200} once >
 									<Image src={LIVE_PROGRAM_DATA.channelImages.logo} fluid />
+									</LazyLoad>
 								</div>
 							</Col>
 							<Col xs={10}>

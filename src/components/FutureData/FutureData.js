@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image, Row, Col } from "react-bootstrap";
+import LazyLoad from 'react-lazyload';
 import "./FutureData.scss";
 import { Component } from 'react';
 
@@ -23,13 +24,17 @@ class FutureData extends Component {
 			<div className="contianer">
 				<div className="future-contianer">
 					<div className="header-image-continaner">
+						<LazyLoad height={200} once >
 						<Image src={FUTURE_PROGRAM_DATA.images.icon} fluid />
+						</LazyLoad>
 					</div>
 					<div className="future-content-title">
 						<Row>
 							<Col xs={2}>
 								<div className="channel-title">
+									<LazyLoad height={200} once >
 									<Image src={FUTURE_PROGRAM_DATA.channelImages.logo} fluid />
+									</LazyLoad>
 								</div>
 							</Col>
 							<Col xs={10}>
