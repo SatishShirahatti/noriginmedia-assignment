@@ -1,0 +1,79 @@
+@import "../../assets/styles/global-sytles.scss";
+.future-contianer{
+	position: relative;
+	text-align: left;
+	background-color: #000;
+	color: white;
+
+ // title section
+.future-content-title{
+padding: 20px;
+.channel-title{
+	text-align: center;
+}
+.Program-details-section{
+text-align: left;
+p{
+	.title{
+		font-size: 18px;
+		color:#fff;
+	}
+	span{
+		padding: 10px;
+		color:#747474;
+	}
+}
+
+.show-details{
+
+	span{
+		padding-right: 20px;
+	}
+}
+}
+}
+.live-content-detials{
+	padding: 0 50px;
+}
+.content {
+  overflow: hidden;
+  line-height: 1.2em;
+  height: 1.2em;
+  margin: 0;
+  //$primary-color 
+}
+.content.collapsed{
+  overflow: hidden;
+}
+.content.expanded{
+  overflow: visible;
+  height: auto;
+}
+.view-more-less{
+	color:$primary-color;
+}
+.live-content-cast-detials{
+	padding: 0 50px;
+}
+	.series-button{
+		text-align: center;
+		padding: 10px;
+		button{
+			background-color: transparent;
+			padding: 10px;
+			margin: 10px;
+			color: #747474;
+			font-size: 22px;;
+		}
+	}
+}
+
+
+@media (min-width: $breakpoint-mobile) {
+h1{
+font-size: 20px;
+}
+h3{
+font-size: 18px;
+}
+}

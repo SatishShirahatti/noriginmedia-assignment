@@ -14,7 +14,7 @@ const SpinnerPage = () => {
       </div>
       <div className="spinner-grow text-info" role="status">
 	  </div>
-	<h3>work in progress</h3>
+	<h3>Coming Soon</h3>
     </>
 		
 	);

@@ -1,0 +1,85 @@
+@import "../../assets/styles/global-sytles.scss";
+.live-contianer{
+	position: relative;
+	text-align: left;
+	background-color: #000;
+	color: white;
+
+.live-text{
+	background-color: #545b62;
+	position: absolute;
+	right: 0;
+	top: 30px;
+	padding: 10px 40px;
+	border: 1px solid #495057;
+	color: white;
+	font-size: 18px;
+	background: transparent;
+		.dot {
+				height: 25px;
+				width: 25px;
+				background-color: lightgreen;
+				border-radius: 50%;
+				display: inline-block;
+				position: relative;
+				right: 10px;
+				top: 5px;
+		}
+}
+ // title section
+.live-content-title{
+padding: 20px;
+.channel-title{
+	text-align: center;
+}
+.Program-details-section{
+text-align: left;
+
+.show-details{
+
+	span{
+		padding-right: 20px;
+	}
+}
+}
+}
+.live-content-detials{
+	color: $color-paragraph;
+	font-size: 18px;
+	padding: 0 50px;
+}
+.content {
+  overflow: hidden;
+  line-height: 1.2em;
+  height: 1.2em;
+  margin: 0;
+ .view-more-less{
+	  color:$primary-color; 
+ }
+}
+.content.collapsed{
+  overflow: hidden;
+}
+.content.expanded{
+  overflow: visible;
+  height: auto;
+}
+.view-more-less{
+	color:$primary-color;
+}
+.live-content-cast-detials{
+	padding: 0 50px;
+	color: $color-paragraph;
+}
+	
+}
+
+
+@media (min-width: $breakpoint-mobile) {
+h1{
+font-size: 20px;
+}
+h3{
+font-size: 18px;
+}
+}

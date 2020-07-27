@@ -5,7 +5,6 @@ import './Channel.scss';
 function Channel({schedules}) {
 	
 	schedules.sort((a, b) => b.start - a.start);
-	console.log("schedules", schedules)
     return (
         <div className="channel-program">
             {

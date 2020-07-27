@@ -3,8 +3,6 @@
 	import Icon from "./icons";
 	import history from '../../history';
 
-
-
 	class BottomBar extends Component{
 
 		constructor() {
@@ -58,7 +56,6 @@
 			<div className="bottomcontainer container-fluid">
 				<div className="row">
 					<div className="col-2 d-none d-md-block">
-						1 of 3
 						</div>
 					<div className="col-sm-12 col-md-8 col-xs-12">
 						<div className="bottom-content-container">
@@ -78,7 +75,6 @@
 						</div>
 					</div>
 					<div className="col-2 d-none d-md-block">
-						3 of 3
 						</div>
 				</div>
 			</div>
