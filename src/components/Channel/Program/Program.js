@@ -11,25 +11,18 @@ export default ({ data }) => {
 	const startStr = startDate.format('HH:mm');
 	const endStr = endDate.format('HH:mm');
 
-    // console.log('start-datE', startDate.format('YYYY/MM/d'))
-    // const programLength = (data.end - data.start) / 1000 / 60;
-
     const duration = moment.duration(endDate.diff(startDate));
-    // const programLength = (data.end - data.start) / 60 / 1000; //mintues
-    // var duration = (end - start) / 1000 / 60;
+ 
     var mintues = duration.asMinutes();
 
     // const sDate = new Date(data.start);
 	// const eDate = new Date(data.end);
 	// console.log("start", sDate)
-	// console.log("end", eDate)
-   // const pl = (eDate - sDate) / 1000 / 60;
+
 
     // console.log('pl', mintues, pl);
     const elWidth = (HOUR_SIZE / 60) * mintues;
-  //  const elWidth =  mintues*4+"px";
 
-   // const containerWidth = HOUR_SIZE * 24;
     const startMinutes = startDate.hours() * 60 + startDate.minutes();
 	
     const position = ((HOUR_SIZE / 60) * startMinutes);

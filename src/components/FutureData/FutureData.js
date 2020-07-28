@@ -17,8 +17,6 @@ class FutureData extends Component {
 		const { FUTURE_PROGRAM_DATA } = this.props;
 		const { expanded } = this.state;
 		const toggledClass = expanded ? 'expanded' : 'collapsed';
-	//	const StartTime = moment(FUTURE_PROGRAM_DATA.start).format("hh:mm");
-	//	const EndTime = moment(FUTURE_PROGRAM_DATA.end).format("hh:mm");
 
 		return (
 			<div className="contianer">
