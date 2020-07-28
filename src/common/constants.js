@@ -1,1 +1,1 @@
-export const HOUR_SIZE = 200;
+export const HOUR_SIZE = 150;
