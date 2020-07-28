@@ -11,9 +11,9 @@ class ReplayPage extends Component {
 		return (
 			<div style={{ display: 'flex', justifyContent: 'center', padding: 30 }}>
 				<div>
-					<SpinnerPage></SpinnerPage>	
+					<SpinnerPage></SpinnerPage>
 				</div>
-				
+
 			</div>
 		);
 	}

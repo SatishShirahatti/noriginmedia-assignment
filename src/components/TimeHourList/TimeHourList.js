@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {HOUR_SIZE} from "../../common/constants";
+import { HOUR_SIZE } from "../../common/constants";
 import "./TimeHourList.scss";
 
 class TimeHourList extends Component {
@@ -15,6 +15,7 @@ class TimeHourList extends Component {
 	render() {
 		const currentTime = new Date().getHours();
 		return (
+
 			<div className="time-labels" >
 				{this.hoursList.map((h) => (
 					<div key={h} className={currentTime === h ? "time-label activeTime" : "time-label"}

@@ -3,18 +3,19 @@ import TimeHourList from "../TimeHourList/TimeHourList";
 import ChannelHolder from "../ChannelHolder/ChannelHolder";
 import "./Timeline.scss"
 
-class TimelineContainer extends Component{
+class TimelineContainer extends Component {
 
-	render(){
-		return(
+	render() {
+		return (
 			<div className="timeline-container">
 				<div className="line" />
 				<div className="holder">
-					<div className="time-holder">
-						<TimeHourList/>
-						<ChannelHolder/>
+				<div className="time-holder">
+						<TimeHourList />
+						<ChannelHolder />
 					</div>
 				</div>
+				<br/>
 			</div>
 		)
 	}

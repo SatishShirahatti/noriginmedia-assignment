@@ -1,3 +1,4 @@
+
 			 .time-labels {
 			 	display: flex;
 			 	flex-wrap: nowrap;
@@ -14,10 +15,22 @@
 					 padding: 14px 34px;
 					 opacity: 0.6;
 				 }
+			 		.line {
+		position: absolute;
+		z-index: 20;
+		width: 1px;
+		background: yellow;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
 				 .activeTime{
 					 opacity: 1.0;
 					 font-size: 120%;
 				 }
+		 
 
 			 	.time-label:after {
 			 		content: "";

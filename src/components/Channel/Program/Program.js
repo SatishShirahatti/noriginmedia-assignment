@@ -22,7 +22,7 @@ export default ({ data }) => {
 
     // console.log('pl', mintues, pl);
     const elWidth = (HOUR_SIZE / 60) * mintues;
-
+	//console.log("wid", elWidth)
     const startMinutes = startDate.hours() * 60 + startDate.minutes();
 	
     const position = ((HOUR_SIZE / 60) * startMinutes);

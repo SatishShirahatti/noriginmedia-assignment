@@ -23,7 +23,7 @@ class FutureData extends Component {
 				<div className="future-contianer">
 					<div className="header-image-continaner">
 						<LazyLoad height={200} once >
-						<Image src={FUTURE_PROGRAM_DATA.images.icon} fluid />
+							<Image src={FUTURE_PROGRAM_DATA.images.icon} fluid />
 						</LazyLoad>
 					</div>
 					<div className="future-content-title">
@@ -31,16 +31,16 @@ class FutureData extends Component {
 							<Col xs={2}>
 								<div className="channel-title">
 									<LazyLoad height={200} once >
-									<Image src={FUTURE_PROGRAM_DATA.channelImages.logo} fluid />
+										<Image src={FUTURE_PROGRAM_DATA.channelImages.logo} fluid />
 									</LazyLoad>
 								</div>
 							</Col>
 							<Col xs={10}>
 								<div className="Program-details-section">
 									<p>
-									<span className="title">Comedy Central</span>
-									<span>14:30 - 17:00</span>
-									<span> 3 May</span>
+										<span className="title">Comedy Central</span>
+										<span>14:30 - 17:00</span>
+										<span> 3 May</span>
 									</p>
 									<h1>{FUTURE_PROGRAM_DATA.title}</h1>
 									<div className="show-details">
@@ -91,10 +91,10 @@ class FutureData extends Component {
 						</div>
 					</div>
 					<div>
-					
+
 						<div className="series-button">
 							{FUTURE_PROGRAM_DATA.series.map((seriesbutton) =>
-								<button key={seriesbutton.title}>{seriesbutton.title}</button>	
+								<button key={seriesbutton.title}>{seriesbutton.title}</button>
 							)
 							}
 						</div>

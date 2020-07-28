@@ -2,9 +2,7 @@ import React from 'react';
 import { Image, Row, Col } from "react-bootstrap";
 import LazyLoad from 'react-lazyload';
 import "./LiveData.scss";
-//import LIVE_PROGRAM_DATA from "../../common/API/programdata/program_live";
 import { Component } from 'react';
-//console.log("data", LIVE_PROGRAM_DATA);
 
 class LiveData extends Component {
 
@@ -16,16 +14,16 @@ class LiveData extends Component {
 	}
 
 	render() {
-		const {  LIVE_PROGRAM_DATA} = this.props;
-		const { expanded} = this.state;
+		const { LIVE_PROGRAM_DATA } = this.props;
+		const { expanded } = this.state;
 		const toggledClass = expanded ? 'expanded' : 'collapsed';
-		
+
 		return (
 			<div className="contianer">
 				<div className="live-contianer">
 					<div className="header-image-continaner">
 						<LazyLoad height={200} once >
-						<Image src={LIVE_PROGRAM_DATA.images.icon} fluid />
+							<Image src={LIVE_PROGRAM_DATA.images.icon} fluid />
 						</LazyLoad>
 						<span className="live-text">
 							<span className="dot"></span>
@@ -37,7 +35,7 @@ class LiveData extends Component {
 							<Col xs={2}>
 								<div className="channel-title">
 									<LazyLoad height={200} once >
-									<Image src={LIVE_PROGRAM_DATA.channelImages.logo} fluid />
+										<Image src={LIVE_PROGRAM_DATA.channelImages.logo} fluid />
 									</LazyLoad>
 								</div>
 							</Col>
@@ -62,7 +60,7 @@ class LiveData extends Component {
 						<div className="col-xs-12">
 							<div className="live-content-detials">
 								<p className={`content ${toggledClass}`}>{LIVE_PROGRAM_DATA.description}</p>
-								<span className="view-more-less"  onClick={() => this.setState({ expanded: !expanded })}>
+								<span className="view-more-less" onClick={() => this.setState({ expanded: !expanded })}>
 									{expanded ? 'Less' : 'More'}
 								</span>
 							</div>
