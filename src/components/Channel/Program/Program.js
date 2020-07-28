@@ -27,6 +27,7 @@ export default ({ data }) => {
 
     // console.log('pl', mintues, pl);
     const elWidth = (HOUR_SIZE / 60) * mintues;
+  //  const elWidth =  mintues*4+"px";
 
    // const containerWidth = HOUR_SIZE * 24;
     const startMinutes = startDate.hours() * 60 + startDate.minutes();
