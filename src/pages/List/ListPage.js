@@ -12,11 +12,18 @@ class ListPage extends Component {
 			showComponent: true, // current made true always
 			CurrentDate: moment(new Date()).format('ddd DD MM'),
 			color: "",
+			interval:null
 		}
 		this._onDayButtonClick = this._onDayButtonClick.bind(this);
 	}
+	
 	componentDidMount() {
-		this.handleCurrentTime();  // scroll on page load 
+		this.interval = setInterval(this.handleCurrentTime, 6000);
+		//this.handleCurrentTime();
+		  // scroll on page load 
+	}
+	componentWillUnmount() {
+		clearInterval(this.interval);
 	}
 	_onDayButtonClick() {  // current doesnt do anything
 		this.setState({
@@ -24,8 +31,10 @@ class ListPage extends Component {
 		});
 
 	}
+	
 	handleCurrentTime = () => {
 		const anchor = document.querySelector('.activeTime');
+		//console.log("time1", this.interval) 
 		anchor.scrollIntoView({ behavior: 'smooth', block: 'center', inline: "center" })
 	}
 	toggleStartColor = (event) => {
