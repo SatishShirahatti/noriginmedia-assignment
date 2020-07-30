@@ -10,14 +10,22 @@ class FutureData extends Component {
 		super(props)
 		this.state = {
 			expanded: false,
+			currentIndexEpisode : 0,
+		}
+	}
+
+	handleSeriesData = (clickedIndex) =>{
+		const { currentIndexEpisode} = this.state;
+		if (clickedIndex !== currentIndexEpisode) {
+			this.setState({ currentIndexEpisode: clickedIndex });
 		}
 	}
 
 	render() {
 		const { FUTURE_PROGRAM_DATA } = this.props;
-		const { expanded } = this.state;
+		const { expanded, currentIndexEpisode } = this.state;
 		const toggledClass = expanded ? 'expanded' : 'collapsed';
-
+		console.log("FUTURE_PROGRAM_DATA", FUTURE_PROGRAM_DATA)
 		return (
 			<div className="contianer">
 				<div className="future-contianer">
@@ -93,10 +101,19 @@ class FutureData extends Component {
 					<div>
 
 						<div className="series-button">
-							{FUTURE_PROGRAM_DATA.series.map((seriesbutton) =>
-								<button key={seriesbutton.title}>{seriesbutton.title}</button>
+							{FUTURE_PROGRAM_DATA.series.map((seriesbutton, clickedIndex) =>
+								<button key={seriesbutton.title} 
+									onClick={() => this.handleSeriesData(clickedIndex)}>{seriesbutton.title}</button>
 							)
 							}
+							<div>
+								{FUTURE_PROGRAM_DATA.series[currentIndexEpisode].episodes.map((e,i)=>
+									(<div key={i}>
+										{e.title}
+										</div>
+										)
+									)}
+							</div>
 						</div>
 						<br />
 						<br />
