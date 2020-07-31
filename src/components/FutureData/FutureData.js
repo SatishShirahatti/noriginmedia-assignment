@@ -25,7 +25,7 @@ class FutureData extends Component {
 		const { FUTURE_PROGRAM_DATA } = this.props;
 		const { expanded, currentIndexEpisode } = this.state;
 		const toggledClass = expanded ? 'expanded' : 'collapsed';
-		console.log("FUTURE_PROGRAM_DATA", FUTURE_PROGRAM_DATA)
+	//	console.log("FUTURE_PROGRAM_DATA", FUTURE_PROGRAM_DATA)
 		return (
 			<div className="contianer">
 				<div className="future-contianer">

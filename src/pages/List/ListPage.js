@@ -18,12 +18,12 @@ class ListPage extends Component {
 	}
 	
 	componentDidMount() {
-		this.interval = setInterval(this.handleCurrentTime, 6000);
-		//this.handleCurrentTime();
+	this.interval = setInterval(this.handleCurrentTime, 6000);
+	this.handleCurrentTime();
 		  // scroll on page load 
 	}
 	componentWillUnmount() {
-		clearInterval(this.interval);
+	clearInterval(this.interval);
 	}
 	_onDayButtonClick() {  // current doesnt do anything
 		this.setState({
